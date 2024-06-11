@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "FonteHagrid";
+    src: url("../../assets/fonts/Hagrid-Italic-trial.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.principal{
+    display: flex;
+    background-image: url("../../assets/images/Quadribol.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: -1;
+}
+
+.exitImageBackground {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  margin-left: 700px;
+  border-radius: 16px;
+  margin-top: 50px;
+  z-index: 1;
+  animation: fadeInAnimation 3s ease-in-out forwards;
+  }
+
+.exitImageBackground img{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
+.exitImageIcon img{
+    width: 100px;
+    box-shadow:
+    -1px -1px 0 #00000060,
+     2px -1px 0 #00000060,
+    -1px  2px 0 #00000060,
+     2px  2px 0 #00000060;
+  }
+
+.porta:hover{
+    transform: scale(1.3);
+  }
+
+.paginaEsquerda{
+    height: auto;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.paginaMeio{
+    height: 100vh;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.paginaDireita{
+    height: auto;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+.vassoura{
+    height: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem{
+    width: 400px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 16px;
+}
+.imagem1{
+    width: 700px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 16px;
+}
+.botao{
+    margin-top: 10px;
+    background-color: green;
+    border-radius: 16px;
+    width: 300px;
+}
+.botao a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.pergaminho{
+    height: 300px;
+    width: 700px;
+    background-image: url("../../assets/images/pergaminho.png");
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 130px;
+    font-size: 30px;
+    font-family: "FonteHagrid";
+    cursor: default;
+}
+
+.hagrid{
+margin-bottom: 54px;
+height: 450px;
+width: 500px;
+visibility: hidden;
+}
+
+.hagrid :hover{
+    transform: scale(1.5);
+}

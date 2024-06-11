@@ -1,0 +1,341 @@
+@font-face {
+  font-family: "FonteHarryPotter";
+  src: url("../../assets/fonts/HARRP___.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FonteTomRiddle";
+  src: url("../../assets/fonts/TomRiddle.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Magik";
+  src: url("../../assets/fonts/Magik.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* VOLTAR TODAS AS OPACITY PARA 0 E COLOCAR AS ANIMATIONS */
+/* VOLTAR TODAS AS OPACITY PARA 0 E COLOCAR AS ANIMATIONS */
+/* VOLTAR TODAS AS OPACITY PARA 0 E COLOCAR AS ANIMATIONS */
+/* VOLTAR TODAS AS OPACITY PARA 0 E COLOCAR AS ANIMATIONS */
+
+.principal{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.crest {
+  padding: 1.5625rem;
+  width: 17.5rem;
+  height: auto;
+  animation: fadeInAnimation 3s ease-in-out forwards;
+}
+
+.crestContainer {
+  width: 17.5rem;
+  height: 30vh;
+}
+
+.contentContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 100%;
+  animation: fadeInAnimation 0.5s ease-in 3s forwards;
+  opacity: 0;
+}
+
+.paginaContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62.5rem;
+  height: 43.75rem;
+}
+
+.paginas {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.paginaEsquerda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 85%;
+  font-size: 32px;
+  font-family: "Magik";
+}
+
+.pesquisa{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  width: 380px;
+}
+
+.formulario{
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: black;
+  width: 350px;
+  font-family: "Magik";
+  border-radius: 5px;
+
+}
+.formulario::placeholder{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #F3f3f3;
+}
+
+.potions a {
+  text-decoration: none;
+  color:#000;
+}
+
+.potions a:hover {
+  font-size: 35px;
+}
+
+.paginaDireita {
+  flex-direction: column;
+  font-size: 30px;
+  align-items: center;
+  align-items: flex-start;
+  margin-left: 3.125rem;
+  width: 40%;
+  height: 85%;
+  font-family: "Magik";
+}
+
+.paginaDireita li{
+  font-size: 25px;
+}
+
+.monitorContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 36.875rem;
+  height: 80vh;
+  margin-top: 100px;
+}
+
+.monitorImagem {
+  margin-bottom: 8.75rem;
+  width: 23.75rem;
+  height: 29.375rem;
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease-in 4.5s forwards; 
+}
+
+.monitorTexto {
+  margin-right: 9.375rem;
+  width:  40.625rem;
+  height: 500px;
+  min-height: 500px;
+}
+
+.chatBox {
+  margin-top: 15px;
+  background-image: url('./src/assets/images/pergaminho.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2.375rem;
+  margin-left: 3.125rem;
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease-in 4.5s forwards; 
+}
+
+.studentText {
+  margin-top: 15px;
+  width: 90%;
+  height: 500px;
+  font-family: "FonteHarryPotter";
+  font-size: 2rem;
+  color: white;
+  text-shadow:
+  -1px -1px 0 #000,
+   2.5px -1px 0 #000,
+  -1px  2.5px 0 #000,
+   2.5px  2.5px 0 #000;
+   opacity: 0;
+   animation: fadeInFromLeft 1.5s ease-in 5.5s forwards;
+}
+.studentText a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.studentText a:hover{
+  transform: scale(1.5);
+}
+
+.studentImage:hover {
+  transform: scale(1.05);
+}
+
+.crest:hover {
+  transform: scale(1.05);
+}
+
+.scrollContainer {
+  max-height: 320px; 
+  overflow-y: auto;
+  border: 1px solid #cccccc68; 
+  padding: 10px; 
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #e68630; 
+  border-radius: 10px; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+::-webkit-scrollbar-button {
+  background: #d16f32; 
+  height: 16px;
+  border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-button:hover {
+  background: #555;
+}
+
+
+
+
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromLeft {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+.criarPocao{
+  background-size: cover;
+  background-position: center;
+  left: 0px;
+  top: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  flex-direction: column;
+  color: white;
+  border-radius: 16px;
+  z-index: 0;
+}
+
+.criarPocao h2 {
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease-in 4.5s forwards;
+}
+
+.atributo {
+  font-size: 35px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+
+.modal{
+  background-image: url("../../assets/images/icones/fundo-pena.jpeg") ;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  margin-left: 10px;
+  border-radius: 16px;
+  z-index: 1;
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease-in 4.5s forwards;
+}
+.modal button{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.modal button img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease-in 4.5s forwards;
+  
+}
+.modal button :hover{
+  transform: scale(1.5);
+}
+
+.adicionaRemove{
+  width: 130px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 9px;
+  background-color: blue;
+  color: white
+  ;
+
+
+}
